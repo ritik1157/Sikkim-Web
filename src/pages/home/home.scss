@@ -40,6 +40,17 @@
     }
 }
 
+@media screen and (max-width:425px)
+{
+    .main-text{
+        div{
+            font-size: 5rem;
+        }
+    }
+}
+
+
+
 section {
     padding: 2.5rem;
     margin-top: -50px;
@@ -160,6 +171,27 @@ section {
             }
         }
     }
+
+    @media screen and (max-width:425px) {
+        .row-1{
+            flex-direction: column;
+            .about>p{
+                height: 350px;
+            }
+        }
+        .row-2{
+            flex-direction: column;
+
+            .directory>ul>li{
+                height: auto;
+                .key{
+                    flex: 1;
+                }
+            }
+        }
+        
+    }
+
 
     .row-2 {
         display: flex;

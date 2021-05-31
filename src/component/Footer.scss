@@ -11,4 +11,14 @@ footer {
     p + p {
         margin-left: auto;
     }
+
+}
+@media screen and (max-width:425px) {
+    footer{
+        flex-direction: column;
+        p + p {
+            margin-left: unset;
+        }
+    }
+        
 }
