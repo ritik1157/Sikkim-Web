@@ -1,0 +1,147 @@
+.explore-container {
+    min-height: 100vh;
+    .cards-container {
+        padding: 2.5rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+        .destination-card {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            background-position: 0 50%;
+
+            .wrapper {
+                transform: translateY(200px);
+                padding: 2rem;
+                color: white;
+                position: relative;
+                z-index: 2;
+                transition: all 0.3s ease;
+            }
+
+            .destination-name {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            .destination-description {
+                opacity: 0;
+                transition: all 0.3s ease;
+                font-weight: 300;
+            }
+
+            &::after {
+                content: "";
+                background: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: all 0.3s ease;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                .wrapper {
+                    transform: translateY(0);
+                }
+
+                .destination-description {
+                    opacity: 1;
+                }
+
+                &::after {
+                    background: rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+
+        .destination-card:nth-child(6) {
+            background-position: 0% 0%;
+        }
+    }
+}
+
+// .explore__content{
+
+//     // padding: 0.4rem 0.6rem;
+//     // .Card__Destination{
+//     //     width: 65%;
+//     //     height: 500px;
+//     //     background-position:contain;
+//     //     background-repeat: no-repeat;
+//     //     color:white;
+//     //     display: flex;
+//     //     flex-direction: column;
+//     //     background-blend-mode: overlay;
+//     //     padding: 0.4rem;
+//     //     margin:  1rem auto;
+
+//     //     .DestinationName{
+//     //         flex: 1;
+//     //         display: flex;
+//     //         align-items: flex-end;
+//     //         font-size: 2.25rem;
+//     //     }
+//     //     .about{
+//     //         // flex: 1;
+//     //         align-content: flex-end;
+//     //         font-weight: 300;
+//     //     }
+
+//     //     img{
+
+//     //     }
+//     // }
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin: auto;
+
+//     .Card__Destination{
+//         margin: 2rem;
+//         height:50vmin;
+//         width: 42vw;
+//         background: #eaeaea;
+//         display: flex;
+//         box-shadow: 0 0 20px 0 rgba($color: #000000, $alpha: 0.4);
+
+//         .Left{
+//             flex: 1.5;
+//             display: flex;
+//             flex-direction: column;
+
+//             .image{
+//                 flex: 1.8;
+//                 background-size: cover;
+//                 margin: auto;
+//                 transform: translateY(-5%);
+//                 width: 90%;
+//                 height: 70%;
+//                 box-shadow: 0 0 20px 0 black;
+//             }
+
+//             .PlaceName{
+//                 color: grey;
+//                 margin: auto;
+//                 font-size: 1.8rem;
+//                 font-weight: 600;
+//                 border-bottom: 0.2rem solid grey;
+//             }
+//         }
+//         .right{
+//             flex:1;
+//             padding: 1rem;
+//             align-content: flex-end;
+//         }
+//     }
+// }

@@ -1,0 +1,23 @@
+.gallery-container {
+
+    * {
+        -webkit-column-break-inside: avoid;
+        -moz-column-break-inside: avoid;
+        -moz-page-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid-column;
+    }
+
+    .images-container {
+        padding: 2rem;
+        column-count: 3;
+        gap: 0.8rem;
+
+        .img-wrapper {
+            display: flex;
+            margin-bottom: 0.8rem;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+    }
+}

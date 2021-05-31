@@ -1,0 +1,14 @@
+footer {
+    background: #0c0c0c;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 200;
+    padding: 1rem 2.5rem;
+
+    p + p {
+        margin-left: auto;
+    }
+}

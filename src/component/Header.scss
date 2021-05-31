@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+
+    nav {
+        ul {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    svg {
+        margin-left: auto;
+        width: 50px;
+        border-radius: 4px;
+    }
+}
